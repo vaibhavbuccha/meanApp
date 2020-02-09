@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
 })
 
 export class postCreateComponent {
+  newPost = '';
   createPost(){
-    alert('Post Added!');
+    this.newPost = 'The new post added by user!'
   }
 }
