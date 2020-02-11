@@ -2,8 +2,12 @@
   <h4>Create Post</h4>
   <hr>
   <div>
-    <textarea name="" id="" cols="30" rows="10" [value]="newPost" #postInput ></textarea>
-    <button (click)="createPost(postInput)" >save post</button>
+    <!-- <textarea name="" id="" cols="30" rows="10" [value]="newPost" #postInput ></textarea> -->
+    <!--
+      two way binding
+     -->
+    <textarea name="" id="" cols="30" rows="10" [(ngModel)]="enteredValue"  ></textarea>
+    <button (click)="createPost()" >save post</button>
   </div>
   <p>{{ newPost }}</p>
 </div>
